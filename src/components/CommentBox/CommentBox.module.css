@@ -1,0 +1,11 @@
+.commentBox {
+  margin-block: 10px;
+}
+textarea {
+  background: #f8f8f8;
+  resize: none;
+  width: 100%;
+  border: none;
+  padding-block: 1.3em;
+  border-radius: 4px;
+}

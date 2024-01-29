@@ -1,0 +1,65 @@
+.formContainer {
+  width: 500px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.closeButton {
+  font-size: 1.5rem;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  transition: background-color 0.3s;
+}
+
+div span {
+  display: none;
+}
+
+.aboveFooter {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.trackingContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #205cdf;
+  font-size: 12px;
+}
+.actionButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 1em;
+  box-shadow: 10px 10px 10px white;
+}
