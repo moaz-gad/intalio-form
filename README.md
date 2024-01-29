@@ -11,7 +11,7 @@ Before you start, make sure you have Node.js and npm (Node Package Manager) inst
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/moaz-gad/intalio-form.git
    ```
 
 2. Navigate to the project directory:
