@@ -15,7 +15,7 @@ html {
 
 body {
   background-color: #f7f8fa;
-  color: #333;
+  color: #556471;
   line-height: 1.6;
   padding: 20px;
 }
@@ -31,30 +31,8 @@ body {
   color: #6c757d;
 }
 
-.custom-checkbox {
-  display: inline-block;
-  margin-right: 10px;
-}
 .tracking-options {
   display: flex;
   align-items: center;
   margin-top: 1rem;
-}
-input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 15px;
-  height: 15px;
-  border: 2px solid grey;
-  border-radius: 3px;
-  outline: none;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #205cdf;
-  border-color: #205cdf;
-  color: white;
 }

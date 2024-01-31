@@ -8,6 +8,7 @@ import styles from "./forwardForm.module.css";
 import avatarImage from "../../assets/avatar.svg";
 import { RiUserAddLine } from "react-icons/ri";
 import { MdTrackChanges } from "react-icons/md";
+import { IoCloseOutline } from "react-icons/io5";
 
 const CustomDropdownIndicator = () => {
   return (
@@ -25,18 +26,34 @@ const CustomSelectedOption = ({ data }) => {
   );
 };
 const customStyles = {
+  valueContainer: (provided) => ({
+    ...provided,
+    overflowX: "hidden",
+    flexWrap: "nowrap",
+  }),
+
   indicatorsContainer: (provided) => ({
     ...provided,
     cursor: "pointer",
   }),
   control: (provided) => ({
     ...provided,
+    borderRadius: "7px",
     paddingRight: "10px",
+    border: "1px solid #556471",
+    boxShadow: "none",
+    "&:hover": {
+      border: "1px solid #556471",
+    },
   }),
-  // Styles for the labels
+  multiValueContainer: (provided) => ({
+    ...provided,
+  }),
   multiValue: (provided) => ({
     ...provided,
+    flex: "none",
     backgroundColor: "#f8f8f8",
+    cursor: "grab",
   }),
 
   multiValueRemove: (provided) => ({
@@ -66,7 +83,7 @@ const ForwardForm = () => {
   const [toUsers, setToUsers] = useState([]);
   const [ccUsers, setCcUsers] = useState([]);
   const [purpose, setPurpose] = useState("");
-  const [dueDate, setDueDate] = useState(new Date());
+  const [dueDate, setDueDate] = useState("");
   const [comments, setComments] = useState("");
   const [followUp, setFollowUp] = useState(false);
   const [error, setError] = useState("");
@@ -122,7 +139,7 @@ const ForwardForm = () => {
       <div className={styles.formHeader}>
         <h1 className={styles.formTitle}>Forward</h1>
         <button type="button" className={styles.closeButton} onClick={() => {}}>
-          &times;
+          <IoCloseOutline style={{ fontSize: "2em" }} />
         </button>
       </div>
       <form onSubmit={handleSubmit} className={styles.forwardForm}>
@@ -171,9 +188,7 @@ const ForwardForm = () => {
               checked={followUp}
               onChange={() => setFollowUp(!followUp)}
             />
-            <label htmlFor="followUp" className={styles.checkboxLabel}>
-              Follow up this activity
-            </label>
+            <p className={styles.checkboxLabel}>Follow up this activity</p>
           </div>
 
           <div className={styles.trackingContainer}>
@@ -183,7 +198,7 @@ const ForwardForm = () => {
         </div>
 
         <div className={styles.actionButtons}>
-          <Button type="button" bgColor="lightblue" color={"#205cdf"}>
+          <Button type="button" bgColor="#ecf5ff" color={"#205cdf"}>
             Cancel
           </Button>
           <Button type="submit" bgColor="#205cdf" color={"white"}>

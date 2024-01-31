@@ -1,3 +1,14 @@
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  border: none;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
 .formContainer {
   width: 500px;
   padding: 20px;
@@ -16,16 +27,17 @@
 }
 
 .formTitle {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1rem;
+
+  color: #556471;
 }
 
 .closeButton {
-  font-size: 1.5rem;
+  color: #939ea6;
   border: none;
-  background-color: #f0f0f0;
+  background-color: #f5f7f9;
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,6 +45,9 @@
   transition: background-color 0.3s;
 }
 
+.selectContainer {
+  margin-bottom: 1em;
+}
 div span {
   display: none;
 }
@@ -41,7 +56,8 @@ div span {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-block: 20px;
+  padding-bottom: 5em;
 }
 .checkboxContainer {
   display: flex;
@@ -53,13 +69,19 @@ div span {
   display: flex;
   gap: 5px;
   align-items: center;
-  color: #205cdf;
-  font-size: 12px;
+  color: #a6bef2;
+  font-size: 14px;
 }
 .actionButtons {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
   margin-top: 1em;
-  box-shadow: 10px 10px 10px white;
+  box-shadow: 0 -4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+}
+.checkboxContainer .checkboxInput[type="checkbox"] {
+  accent-color: #205cdf;
+  cursor: pointer;
+  margin-inline-end: 5px;
 }

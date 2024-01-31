@@ -2,10 +2,11 @@
   margin-block: 10px;
 }
 textarea {
-  background: #f8f8f8;
+  background-color: #f5f7f9;
   resize: none;
   width: 100%;
   border: none;
-  padding-block: 1.3em;
+  padding-block: 1.6em;
+  padding-inline: 10px;
   border-radius: 4px;
 }

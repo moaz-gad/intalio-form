@@ -10,6 +10,7 @@ const DatePicker = ({ selectedDate, onDateChange }) => {
         selected={selectedDate}
         onChange={onDateChange}
         className={styles.input}
+        placeholderText="dd/mm/yyyy"
       />
     </div>
   );

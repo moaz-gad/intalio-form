@@ -1,11 +1,13 @@
 .dropdown {
   width: 100%;
+  margin-block: 1em;
 }
 
 .select {
+  color: #556471;
   width: 100%;
-  background-color: #f8f8f8;
-  padding: 10px;
+  background-color: #f5f7f9;
+  padding: 12px;
+  border-radius: 6px;
   border: none;
-  border-radius: 10px;
 }

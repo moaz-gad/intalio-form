@@ -14,6 +14,7 @@ const Button = ({
     padding: "10px 20px",
     borderRadius: "5px",
     border: "none",
+    fontWeight: "600",
   };
   return (
     <button type={type} onClick={onClick} style={buttonStyles} {...props}>
